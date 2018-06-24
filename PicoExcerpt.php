@@ -1,17 +1,32 @@
 <?php
+/**
+ * This file is part of Pico. It's copyrighted by the contributors recorded
+ * in the version control history of the file, available from the following
+ * original location:
+ *
+ * <https://github.com/PhrozenByte/pico-excerpt/blob/master/PicoExcerpt.php>
+ *
+ * The file was previously part of the project's main repository; the version
+ * control history of the original file applies accordingly, available from
+ * the following original location:
+ *
+ * <https://github.com/picocms/Pico/blob/5cf47e65de66ffc963263a059eb5fe5defadd3e2/plugins/02-PicoExcerpt.php>
+ *
+ * SPDX-License-Identifier: MIT
+ * License-Filename: LICENSE
+ */
 
 /**
- * Creates a excerpt for the contents of each page (as of Pico v0.9 and older)
+ * Creates a excerpt for the contents of each page
  *
- * This plugin exists for backward compatibility and is disabled by default.
- * It gets automatically enabled when {@link PicoDeprecated} is enabled. You
- * can avoid this by calling {@link PicoExcerpt::setEnabled()}.
+ * This plugin exists for historic reasons only and should not be used! It is
+ * disabled by default and needs to be enabled manually.
  *
- * This plugin doesn't do its job very well and depends on
- * {@link PicoParsePagesContent}, what heavily impacts Pico's performance. You
- * should either use the Description meta header field or write something own.
- * Best solution seems to be a filter for twig, see e.g.
- * {@link https://gist.github.com/james2doyle/6629712}.
+ * This plugin doesn't do its job very well and depends on Pico's official
+ * `PicoParsePagesContent` plugin, that heavily impacts Pico's performance. You
+ * should either use the `Description` meta header field or write a plugin on
+ * your own. Best solution for automatic excerpts seems to be a filter for
+ * Twig, see e.g. {@link https://gist.github.com/james2doyle/6629712}.
  *
  * @author  Daniel Rudolf
  * @link    http://picocms.org

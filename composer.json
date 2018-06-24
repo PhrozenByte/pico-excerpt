@@ -1,0 +1,32 @@
+{
+    "name": "phrozenbyte/pico-excerpt",
+    "type": "pico-plugin",
+    "abandoned": true,
+    "description": "This is Pico's official PicoExcerpt plugin. Pico is a stupidly simple, blazing fast, flat file CMS.",
+    "keywords": [ "pico", "picocms", "picocms-plugin", "pico-excerpt", "excerpts" ],
+    "homepage": "http://picocms.org/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "The Pico Community",
+            "homepage": "http://picocms.org/"
+        },
+        {
+            "name": "Contributors",
+            "homepage": "https://github.com/picocms/pico-excerpt/graphs/contributors"
+        }
+    ],
+    "support": {
+        "docs": "http://picocms.org/plugins/excerpt/",
+        "issues": "https://github.com/picocms/pico-excerpt/issues",
+        "source": "https://github.com/picocms/pico-excerpt"
+    },
+    "require": {
+        "php": ">=5.3.0",
+        "picocms/pico": "^1.0|^2.0",
+        "phrozenbyte/pico-parse-pages-content": "^1.0"
+    },
+    "autoload": {
+        "classmap": [ "PicoExcerpt.php" ]
+    }
+}
